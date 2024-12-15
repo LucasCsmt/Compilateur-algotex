@@ -7,7 +7,7 @@ Pour pouvoir compiler ce projet, il est nécessaire de posséder `flex`, `bison`
 Voici la commande permettant de compiler le projet 
 
 ```bash
-$. make
+make
 ```
 
 Cette commande génerera l'exécutable nommé `algo`.
@@ -16,14 +16,14 @@ Pour supprimer tous les fichiers liées à la compilation vous pouvez utiliser
 la commande suivante
 
 ```bash
-$. make clean
+make clean
 ```
 
 Pour compiler et lancer le compilateur en même temps vous pouvez utiliser la 
 commande :
 
 ```bash
-$. make run
+make run
 ```
 
 une fois cette commande lancé, vous pourrez rentrer directement sur l'entrée 
@@ -36,7 +36,7 @@ l'exécution de code à partir de fichier source. Voici la commande à rentrer
 pour utiliser le script : 
 
 ```bash
-$. ./run.sh filename.tex ...
+./run.sh filename.tex ...
 ```
 
 Il est également possible de rentrer plusieurs fichiers en même temps. Le 
@@ -46,7 +46,7 @@ exécuter tous les fichiers de test présents dans le dossier **test** il
 suffit de rentrer la commande suivante :
 
 ```bash
-$. ./run.sh test/*.tex
+./run.sh test/*.tex
 ```
 
 Ainsi il suffit de placer dans le dossier **test** des fichiers de code  
