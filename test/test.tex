@@ -1,0 +1,18 @@
+\begin{algo}{one}{}
+  \RETURN{1}
+\end{algo}
+
+\begin{algo}{two}{}
+  \RETURN{2}
+\end{algo}
+
+\begin{algo}{test}{}
+  \SET{a}{0}
+  \DOFORI{k}{\CALL{one}{}}{\CALL{two}{}}
+    \SET{a}{a + 1}
+  \OD
+  \RETURN{a}
+\end{algo}
+
+\CALL{test}{}
+

@@ -1,0 +1,32 @@
+\begin{algo}{modulo}{a, b}
+  \IF{b = 0}
+    \RETURN{0}
+  \FI
+  \SET{q}{a / b}
+  \RETURN{a - (q * b)}
+\end{algo}
+
+\begin{algo}{est_premier}{a}
+  \DOFORI{k}{1}{a}
+    \IF{k != 1 && k != a && \CALL{modulo}{a, k} = 0}
+      \RETURN{\FALSE}
+    \FI
+  \OD
+  \RETURN{\TRUE}
+\end{algo}
+
+\begin{algo}{trouve_n_premier}{n}
+  \SET{a}{2}
+  \SET{count}{0}
+  \SET{lastprem}{0}
+  \DOWHILE{count < n}
+    \IF{\CALL{est_premier}{a}}
+      \SET{lastprem}{a}
+      \SET{count}{count + 1}
+    \FI
+    \SET{a}{a + 1}
+  \OD
+  \RETURN{lastprem}
+\end{algo}
+
+\CALL{trouve_n_premier}{100}

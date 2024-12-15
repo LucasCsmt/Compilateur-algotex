@@ -1,0 +1,9 @@
+\begin{algo}{fiborec}{n}
+  \IF{n <= 1}
+    \RETURN{n}
+  \ELSE 
+    \RETURN{\CALL{fiborec}{n - 1} + \CALL{fiborec}{n - 2}}
+  \FI
+\end{algo}
+
+\CALL{fiborec}{20}
